@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #fafffa; /* Warna latar halaman agak krem-pink sangat muda */
+            color: #333333;
+        }
+
+        /* Warna pink soft pada semua kolom isian */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"],
+        input[type="url"],
+        select,
+        textarea {
+            background-color: #ecffe6; /* Pink soft manis */
+            border: 1px solid #88ee9e;  * Border pink sedikit lebih gelap */
+            border-radius: 5px;        /* Sudut sedikit membulat agar terlihat rapi */
+            padding: 6px 10px;
+            outline: none;
+        }
+
+        /* Efek saat kolom sedang diklik/diisi */
+        input:focus, select:focus, textarea:focus {
+            background-color: #d5ffd1;
+            border-color: #81d17b;
+        }
+
+        /* Tombol Kirim & Reset */
+        input[type="submit"], input[type="reset"] {
+            background-color: #adf4ac;
+            border: 1px solid #7bd184;
+            padding: 6px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #284a2f;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #8deaa9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigasi Antar Halaman -->
+    <nav>
+        <a href="profile.html">Profil</a> | 
+        <a href="about-me.html">Tentang Saya</a> | 
+        <a href="educations.html">Pendidikan</a> | 
+        <a href="course-schedule.html">Jadwal Kuliah</a> | 
+        <a href="hobbies.html">Hobi</a> | 
+        <a href="form.html">Formulir</a> | 
+        <a href="table1.html">Tabel 1</a> | 
+        <a href="table2.html">Tabel 2</a>
+    </nav>
+    <hr>
+
+    <!-- Judul Formulir -->
+    <h2>Formulir Pendaftaran</h2>
+
+    <!-- Formulir Pendaftaran -->
+    <form action="#" method="POST">
+        
+        <p>
+            <label for="nama">Nama Lengkap:</label><br>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama">
+        </p>
+
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="nama@email.com">
+        </p>
+
+        <p>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password">
+        </p>
+
+        <p>
+            <label for="umur">Umur:</label><br>
+            <input type="number" id="umur" name="umur">
+        </p>
+
+        <p>
+            <label for="tanggal_lahir">Tanggal Lahir:</label><br>
+            <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+        </p>
+
+        <p>
+            Jenis Kelamin:<br>
+            <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki">
+            <label for="laki">Laki-laki</label><br>
+            <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+            <label for="perempuan">Perempuan</label>
+        </p>
+
+        <p>
+            Hobi:<br>
+            <input type="checkbox" id="coding" name="hobi[]" value="Coding">
+            <label for="coding">Coding</label><br>
+            <input type="checkbox" id="gaming" name="hobi[]" value="Gaming">
+            <label for="gaming">Gaming</label><br>
+            <input type="checkbox" id="olahraga" name="hobi[]" value="Olahraga">
+            <label for="olahraga">Olahraga</label>
+        </p>
+
+        <p>
+            <label for="jurusan">Jurusan:</label><br>
+            <select id="jurusan" name="jurusan">
+                <option value="">-- Pilih Jurusan --</option>
+                <option value="Teknik Informatika">Teknik Informatika</option>
+                <option value="Sistem Informasi">Sistem Informasi</option>
+                <option value="Manajemen Informatika">Manajemen Informatika</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="alamat">Alamat:</label><br>
+            <textarea id="alamat" name="alamat" rows="4" cols="30" placeholder="Masukkan alamat"></textarea>
+        </p>
+
+        <p>
+            <label for="foto">Foto:</label><br>
+            <input type="file" id="foto" name="foto">
+        </p>
+
+        <p>
+            <label for="website">Website:</label><br>
+            <input type="url" id="website" name="website" placeholder="https://example.com">
+        </p>
+
+        <p>
+            <input type="submit" value="Kirim">
+            <input type="reset" value="Reset">
+        </p>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table2.html</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #4b502c;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 5px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+        }
+
+        hr {
+            border: none;
+            margin: 25px 0;
+        }
+
+        table {
+            width: 100%;
+            max-width: 1000px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        caption {
+            font-size: 22px;
+            font-weight: bold;
+            color: #2c3e50;
+            padding: 15px;
+        }
+
+        th {
+            background-color: #b7db34;
+            color: white;
+            padding: 12px;
+        }
+
+        td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f0f1ec;
+        }
+
+        tbody tr:hover {
+            background-color: #f8f8d6;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            th, td {
+                padding: 8px 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigasi Antar Halaman -->
+    <nav>
+        <a href="profile.html">Profil</a> |
+        <a href="about-me.html">Tentang Saya</a> |
+        <a href="educations.html">Pendidikan</a> |
+        <a href="course-schedule.html">Jadwal Kuliah</a> |
+        <a href="hobbies.html">Hobi</a> |
+        <a href="form.html">Formulir</a> |
+        <a href="table1.html">Tabel 1</a> |
+        <a href="table2.html">Tabel 2</a>
+    </nav>
+
+    <hr>
+
+    <!-- Tabel 2 -->
+    <table>
+        <caption>Jadwal Laboratorium Komputer</caption>
+
+        <thead>
+            <tr>
+                <th rowspan="2">Hari</th>
+                <th colspan="2">Pagi</th>
+                <th colspan="2">Siang</th>
+                <th rowspan="2">Keterangan</th>
+            </tr>
+            <tr>
+                <th>08:00 - 10:00</th>
+                <th>10:00 - 12:00</th>
+                <th>13:00 - 15:00</th>
+                <th>15:00 - 17:00</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Senin</td>
+                <td>Web 1</td>
+                <td>Web 2</td>
+                <td colspan="2">Praktikum Basis Data</td>
+                <td rowspan="2">Normal</td>
+            </tr>
+            <tr>
+                <td colspan="2">Praktikum Pemrograman</td>
+                <td>Jaringan</td>
+                <td>Jaringan</td>
+            </tr>
+
+            <tr>
+                <td>Selasa</td>
+                <td colspan="2">Seminar</td>
+                <td>Mobile</td>
+                <td>Mobile</td>
+                <td>Seminar Pagi</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Rabu</td>
+                <td>Web</td>
+                <td>Web</td>
+                <td colspan="2" rowspan="2">
+                    Maintenance Laboratorium
+                </td>
+                <td rowspan="2">Maintenance</td>
+            </tr>
+            <tr>
+                <td colspan="2">Basis Data</td>
+            </tr>
+
+            <tr>
+                <td>Kamis</td>
+                <td>Algoritma</td>
+                <td>Algoritma</td>
+                <td colspan="2">Praktikum Jaringan</td>
+                <td>Normal</td>
+            </tr>
+
+            <tr>
+                <th colspan="5">Catatan</th>
+                <td>Jadwal dapat berubah</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

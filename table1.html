@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table1.html</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f4f4;
+            margin: 0;
+            padding: 30px;
+            color: #333;
+        }
+
+        nav {
+            background-color: #502c2c;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 5px;
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+            text-decoration: underline;
+        }
+
+        hr {
+            border: none;
+            margin: 25px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            margin: 20px auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        caption {
+            font-size: 22px;
+            font-weight: bold;
+            padding: 20px;
+            color: #502c2c;
+        }
+
+        th {
+            background-color: #db3434;
+            color: white;
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+
+        td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #fcf2f2;
+        }
+
+        tbody tr:hover {
+            background-color: #fde3e3;
+        }
+
+        /* Baris kegiatan akademik */
+        tbody tr:nth-last-child(2) {
+            background-color: #f8d6d6;
+            font-weight: bold;
+        }
+
+        /* Baris total mata kuliah */
+        tbody tr:last-child {
+            background-color: #502c2c;
+            color: white;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            nav {
+                line-height: 2;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            th, td {
+                padding: 8px 5px;
+            }
+
+            caption {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigasi Antar Halaman -->
+    <nav>
+        <a href="profile.html">Profil</a> |
+        <a href="about-me.html">Tentang Saya</a> |
+        <a href="educations.html">Pendidikan</a> |
+        <a href="course-schedule.html">Jadwal Kuliah</a> |
+        <a href="hobbies.html">Hobi</a> |
+        <a href="form.html">Formulir</a> |
+        <a href="table1.html">Tabel 1</a> |
+        <a href="table2.html">Tabel 2</a>
+    </nav>
+
+    <hr>
+
+    <!-- Tabel 1 -->
+    <table>
+        <caption>Jadwal Perkuliahan Semester 1</caption>
+
+        <thead>
+            <tr>
+                <th rowspan="2">Hari</th>
+                <th rowspan="2">Jam</th>
+                <th colspan="2">Mata Kuliah</th>
+                <th rowspan="2">Ruangan</th>
+            </tr>
+            <tr>
+                <th>Kode</th>
+                <th>Nama Mata Kuliah</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Senin</td>
+                <td>08:00 - 10:00</td>
+                <td>IF101</td>
+                <td>Pemrograman Web</td>
+                <td>Lab 1</td>
+            </tr>
+            <tr>
+                <td>10:00 - 12:00</td>
+                <td>IF102</td>
+                <td>Basis Data</td>
+                <td>Lab 2</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">Selasa</td>
+                <td>08:00 - 10:00</td>
+                <td>IF103</td>
+                <td>Algoritma</td>
+                <td>Ruang 201</td>
+            </tr>
+            <tr>
+                <td>10:00 - 12:00</td>
+                <td>IF104</td>
+                <td>Sistem Operasi</td>
+                <td>Ruang 202</td>
+            </tr>
+            <tr>
+                <td>13:00 - 15:00</td>
+                <td>IF105</td>
+                <td>Jaringan Komputer</td>
+                <td>Lab 3</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Rabu</td>
+                <td>08:00 - 10:00</td>
+                <td>IF106</td>
+                <td>Pemrograman Mobile</td>
+                <td>Lab 4</td>
+            </tr>
+            <tr>
+                <td>10:00 - 12:00</td>
+                <td>IF107</td>
+                <td>Rekayasa Perangkat Lunak</td>
+                <td>Ruang 203</td>
+            </tr>
+
+            <tr>
+                <td colspan="4">Kegiatan Akademik / Seminar</td>
+                <td>Aula</td>
+            </tr>
+
+            <tr>
+                <th>Total Mata Kuliah</th>
+                <th colspan="3">7 Mata Kuliah</th>
+                <td align="center">-</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

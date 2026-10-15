@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobi</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 0 20px;
+            background-color: #e8eef5;
+        }
+
+        .container {
+            border: 2px solid #2c3e50;
+            padding: 20px 40px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin: 40px 0 20px;
+            color: #34495e;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #444;
+        }
+
+        ul {
+            font-size: 1.2em;
+            line-height: 2;
+            background-color: #f2f6fa;
+            padding: 20px 20px 20px 45px;
+            border-radius: 8px;
+        }
+
+        li {
+            padding-left: 5px;
+            transition: 0.3s;
+        }
+
+        li:hover {
+            color: #2980b9;
+            font-weight: bold;
+        }
+
+        .list-pilihan {
+            font-size: 1.2em;
+            line-height: 2;
+            background-color: #f2f6fa;
+            padding: 15px 20px;
+            border-left: 5px solid #3498db;
+            border-radius: 5px;
+        }
+
+        /* Tampilan HP */
+        @media screen and (max-width: 600px) {
+            body {
+                margin: 15px auto;
+                padding: 0 10px;
+            }
+
+            .container {
+                padding: 15px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            p, ul, .list-pilihan {
+                font-size: 1.05em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hobi</h1>
+
+        <p>Beberapa hobi saya adalah:</p>
+
+        <ul>
+            <li>Olahraga</li>
+            <li>Main game</li>
+            <li>Dengerin musik</li>
+            <li>Traveling</li>
+        </ul>
+
+        <h2>Urutan Hobi Favorit</h2>
+
+        <div class="list-pilihan">
+            A. Voli<br>
+            B. Gaming<br>
+            C. Traveling<br>
+            D. Programming
+        </div>
+    </div>
+</body>
+</html>
